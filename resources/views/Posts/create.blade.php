@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <main>
     <div class="container mx-auto p-4">
         <form method="POST" action="{{ route('posts.store') }}" class="bg-yellow-200 p-4 rounded-lg shadow-md">

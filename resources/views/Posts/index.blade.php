@@ -1,5 +1,5 @@
 <body>
-
+<x-header/>
 <div class= "container mx-auto p-4">
     <h1 class="text-3xl font-bold">Latest Posts</h1>
 
@@ -13,6 +13,8 @@
         <h2 class="text-xl font-semibold">{{ $posts[0]->headline }}</h2>
         <p class="text-sm text-gray-500">Author: {{ $posts[0]->author_name }}</p>
         <p class="text-gray-800">{{ $posts[0]->body_text }}</p>
+        <p class="text-gray-500 mt-2">Created at: {{ $post->created_at }}</p>
+        <p class="text-gray-500">Updated at: {{ $post->updated_at }}</p>
     </div>
 
     
